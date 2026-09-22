@@ -1,0 +1,65 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.6,
+    "event_type": "silence",
+    "confidence": 1.0,
+    "transcript": ""
+  },
+  {
+    "start": 0.6,
+    "end": 1.0,
+    "event_type": "dialogue",
+    "confidence": 0.9,
+    "transcript": ""
+  },
+  {
+    "start": 1.0,
+    "end": 26.4,
+    "event_type": "silence",
+    "confidence": 1.0,
+    "transcript": ""
+  },
+  {
+    "start": 26.4,
+    "end": 27.2,
+    "event_type": "dialogue",
+    "confidence": 0.9,
+    "transcript": "Oh Hey, it's almost done"
+  },
+  {
+    "start": 27.2,
+    "end": 27.9,
+    "event_type": "silence",
+    "confidence": 1.0,
+    "transcript": ""
+  },
+  {
+    "start": 27.9,
+    "end": 28.8,
+    "event_type": "dialogue",
+    "confidence": 0.9,
+    "transcript": "Hey, it's almost done"
+  },
+  {
+    "start": 28.8,
+    "end": 30.5,
+    "event_type": "silence",
+    "confidence": 1.0,
+    "transcript": ""
+  },
+  {
+    "start": 30.5,
+    "end": 32.0,
+    "event_type": "dialogue",
+    "confidence": 0.9,
+    "transcript": "Hey sit still"
+  },
+  {
+    "start": 32.0,
+    "end": 120.0,
+    "event_type": "silence",
+    "confidence": 1.0,
+    "transcript": ""
+  }
+]

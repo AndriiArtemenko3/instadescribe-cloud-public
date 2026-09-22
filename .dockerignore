@@ -1,0 +1,39 @@
+# Keep the image small + never ship secrets or scratch state.
+**/node_modules
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+**/.env
+.env
+_backup-pre-eval-*
+modular_pipeline/jobs
+modular_pipeline/study_logs
+App/src
+App/node_modules
+# Redundant in single-origin deploy (backend serves these from App/public):
+App/dist/data
+App/dist/videos
+App/dist/vibe.mp4
+# Ship ONLY the study clip — exclude every other processed clip's data + video
+# to keep the deploy image small.
+App/public/data/*
+!App/public/data/sintel-blender-cc
+App/public/videos/*
+!App/public/videos/sintel-blender-cc.mp4
+App/public/vibe.mp4
+# Never in any build context: VCS state, virtualenvs, test trees, handoffs.
+.git
+**/.venv
+services/api/tests
+services/worker/tests
+tests
+docs/handoffs
+FABLE5_*_HANDOFF.md
+# Private-key/container credentials never belong in a production context.
+**/*.[pP][eE][mM]
+**/*.[kK][eE][yY]
+**/*.[pP]12
+**/*.[pP][fF][xX]

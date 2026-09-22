@@ -1,0 +1,13 @@
+# Fully local, keyless backend (INSTASCRIBE_BACKEND=local). Optional — the
+# default OpenAI backend needs none of this.
+#
+# Vision + text run on Ollama, which speaks the OpenAI-compatible API the base
+# `openai` client already uses, so they need NO extra Python package — just the
+# Ollama daemon and the models:
+#     https://ollama.com   then:   ollama pull qwen2.5vl:7b && ollama pull qwen2.5:7b
+#
+# Only local TTS (Kokoro, kokoro-82M, Apache-2.0) needs Python packages. It runs
+# on the torch already pinned in requirements.txt; weights (~330MB) download on
+# first use. On Linux, Kokoro's g2p may also need espeak-ng (`apt install espeak-ng`).
+kokoro>=0.9
+soundfile>=0.12

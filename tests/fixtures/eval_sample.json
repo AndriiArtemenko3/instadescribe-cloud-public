@@ -1,0 +1,13 @@
+{
+  "durationSecs": 20,
+  "entities": [{ "id": "char_1" }],
+  "audioEvents": [{ "start": 0.5, "end": 2.0, "type": "dialogue" }],
+  "scenes": [
+    { "scene_id": "scene_1", "start": 0, "end": 5, "text": "a man walks into the room", "active": true, "speed": 1, "character_ids": ["char_1"] },
+    { "scene_id": "scene_2", "start": 5, "end": 7, "text": "he sits down quietly now please ok yes", "active": true, "speed": 1, "character_ids": ["char_1"] },
+    { "scene_id": "scene_3", "start": 7, "end": 12, "text": "a man walks into the room", "active": true, "speed": 1, "character_ids": ["char_99"] },
+    { "scene_id": "scene_4", "start": 12, "end": 16, "text": "the dog runs", "active": true, "speed": 1, "character_ids": [] },
+    { "scene_id": "scene_5", "start": 16, "end": 18, "text": "inactive scene", "active": false, "speed": 1, "character_ids": [] },
+    { "scene_id": "scene_6", "start": 18, "end": 20, "text": "   ", "active": true, "speed": 1, "character_ids": [] }
+  ]
+}

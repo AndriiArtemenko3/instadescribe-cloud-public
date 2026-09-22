@@ -1,0 +1,30 @@
+interface LogoProps {
+    size?: number
+    className?: string
+  }
+  
+  export function Logo({ size = 24, className }: LogoProps) {
+    return (
+      <svg
+        width={size}
+        height={size}
+        viewBox="0 0 51 51"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+      >
+        <path
+          d="M39.25 1.25H11.25C5.72715 1.25 1.25 5.72715 1.25 11.25V39.25C1.25 44.7728 5.72715 49.25 11.25 49.25H39.25C44.7728 49.25 49.25 44.7728 49.25 39.25V11.25C49.25 5.72715 44.7728 1.25 39.25 1.25Z"
+          stroke="currentColor"
+          strokeWidth="2.5"
+        />
+        <path
+          d="M18.25 14.25V36.25L39.25 25.25L18.25 14.25Z"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    )
+  }

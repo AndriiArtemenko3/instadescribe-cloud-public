@@ -1,0 +1,94 @@
+# Secrets — NEVER commit
+.env
+**/.env
+
+# Dependencies / build
+node_modules/
+App/node_modules/
+App/dist/
+dist/
+
+# Python scratch
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+
+# Terraform local/generated artifacts — configuration and the provider lock
+# file remain trackable; state, plans, crash output, overrides and secret
+# variable files must never enter the repository.
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfplan.*
+tfplan
+tfplan.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+*.secret.tfvars
+*.secret.tfvars.json
+
+# Runtime / study state
+modular_pipeline/jobs/
+modular_pipeline/study_logs/
+modular_pipeline/out_*/
+App/public/data/s-*/      # per-session study copies
+
+# Heavy working dirs (not source — kept locally, out of the repo)
+_backup-*/
+archive/
+output/
+modular_pipeline_out/
+video_production/
+branding_drafts/
+branding_research/
+references/
+clips/
+
+# Vendored third-party clone (not ours)
+design.md-spec/
+
+# AI / editor scratch
+.claude/
+**/.claude/
+CLAUDE.md
+ClaudeRules.md
+ANIMATION.md
+DESIGN.md
+DevLog*.md
+TIMELINE.md
+SESSION_SCRATCHPAD.md
+
+# OS
+.DS_Store
+**/.DS_Store
+
+# Media: track ONLY the demo fixture; exclude everything else.
+# App/public/videos/ and the non-fixture App/public/data/ dirs would otherwise
+# stage copyright-derived renders. Deny-all, then re-allow the single fixture —
+# the Sintel (CC BY 3.0) demo clip; see THIRD_PARTY_NOTICES.md.
+App/public/videos/*
+!App/public/videos/sintel-blender-cc.mp4
+App/public/data/*/
+!App/public/data/sintel-blender-cc/
+App/public/vibe.mp4
+
+# Root-level loose media / coursework artifacts (kept locally, out of the repo)
+arthouse_test.mp4
+ASBF.pdf
+MOSCOW_CHART.png
+PERSONA.png
+evaluation-2026-04-27.md
+project.gitignore
+info/

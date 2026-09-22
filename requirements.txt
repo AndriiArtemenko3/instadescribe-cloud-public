@@ -1,0 +1,23 @@
+# Full audio-description pipeline (frame extraction, audio, vision, TTS render).
+# Requires ffmpeg + ffprobe on PATH (system install, e.g. `brew install ffmpeg`).
+# For the deploy-only server subset, see modular_pipeline/requirements-server.txt.
+
+# Web server
+flask>=3.0
+flask-cors>=4.0
+
+# OpenAI: gpt-4.1 (scene drafting), gpt-4o-mini (Smart Fill), tts-1-hd (narration)
+openai>=1.0
+python-dotenv>=1.0
+
+# Audio: speech detection + transcription for gap-aware AD placement
+faster-whisper>=1.0
+silero-vad>=5.0
+torch>=2.2
+
+# Numerics + media
+numpy>=1.26,<2.0
+Pillow>=10.0
+
+# Export formats
+python-docx>=1.0

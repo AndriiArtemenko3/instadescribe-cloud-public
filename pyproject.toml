@@ -1,0 +1,29 @@
+# Tooling config for the InstaScribe Python backend (modular_pipeline + tests).
+# Dependencies are pinned in requirements*.txt; this file holds lint/format/test config.
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["design.md-spec", "_backup-*", "archive", "output", "video_production"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+# E501 handled by the formatter.
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# run_job.py sets JOB_* env vars before importing config (which reads them at
+# import time), so its local imports must follow that setup.
+"modular_pipeline/run_job.py" = ["E402"]
+# FastAPI's dependency-injection idiom uses Depends(...) in defaults.
+"services/api/**" = ["B008"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["modular_pipeline"]
+markers = [
+    "ffmpeg: integration tests that shell out to ffmpeg (skipped by default in CI's fast lane)",
+]

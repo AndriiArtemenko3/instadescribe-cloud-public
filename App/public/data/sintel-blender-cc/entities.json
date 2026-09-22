@@ -1,0 +1,24 @@
+[
+  {
+    "id": "char_1",
+    "name": "young woman",
+    "first_mention_label": "a young woman",
+    "pronoun": "she",
+    "aliases": [],
+    "name_history": [
+      "a young woman"
+    ],
+    "user_renamed": false
+  },
+  {
+    "id": "char_2",
+    "name": "dragon-like creature",
+    "first_mention_label": "a dragon-like creature",
+    "pronoun": "it",
+    "aliases": [],
+    "name_history": [
+      "a dragon-like creature"
+    ],
+    "user_renamed": false
+  }
+]

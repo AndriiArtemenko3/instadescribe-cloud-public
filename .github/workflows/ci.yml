@@ -1,0 +1,105 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  backend:
+    name: Python (lint + tests)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dev dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Lint
+        run: |
+          ruff check .
+          ruff format --check .
+      - name: Test
+        run: pytest -q
+
+  cloud-api:
+    name: Cloud API (Python 3.12 + PostgreSQL)
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16.14
+        env:
+          POSTGRES_USER: instascribe
+          POSTGRES_PASSWORD: ci-only
+          POSTGRES_DB: instascribe
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U instascribe"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 12
+      localstack:
+        image: localstack/localstack:4.14.0
+        env:
+          SERVICES: s3,sqs
+          AWS_DEFAULT_REGION: eu-west-2
+        ports:
+          - 4566:4566
+        options: >-
+          --health-cmd "curl -sf http://localhost:4566/_localstack/health"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 24
+    env:
+      DATABASE_URL: postgresql+psycopg://instascribe:ci-only@127.0.0.1:5432/instascribe
+      # Destructive test fixtures run ONLY against this separate, explicitly
+      # test-designated database (the in-suite guard fails closed otherwise).
+      INSTASCRIBE_TEST_DATABASE_URL: postgresql+psycopg://instascribe:ci-only@127.0.0.1:5432/instascribe_test
+      INSTASCRIBE_TEST_S3: "1"
+      AWS_ACCESS_KEY_ID: test
+      AWS_SECRET_ACCESS_KEY: test
+      AWS_DEFAULT_REGION: eu-west-2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install cloud API dependencies
+        run: pip install -r services/api/requirements-dev.txt
+      - name: Create disposable test database
+        run: PGPASSWORD=ci-only psql -h 127.0.0.1 -U instascribe -d instascribe -c "CREATE DATABASE instascribe_test"
+      - name: Migrate application database
+        run: alembic upgrade head
+      - name: Drift check
+        run: alembic check
+      - name: Cloud API tests
+        run: pytest services/api/tests -q
+
+  frontend:
+    name: Frontend (lint + typecheck + tests)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: App
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.19.0"
+          cache: npm
+          cache-dependency-path: App/package-lock.json
+      - run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Typecheck
+        run: npx tsc -b
+      - name: Test
+        run: npm run test
+      - name: Build preserved frontend variants
+        run: |
+          npm run build
+          npm run build:cloud

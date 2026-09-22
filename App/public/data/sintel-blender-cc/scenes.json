@@ -1,0 +1,264 @@
+[
+  {
+    "scene_id": "scene_1",
+    "start": 0.0,
+    "end": 25.0,
+    "frame_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "character_ids": [
+      "char_1",
+      "char_2"
+    ],
+    "caption_template": "Beneath a blazing sky, {char_1_first} stands on a sunlit rooftop, cautiously approaching {char_2_first}, a small, wounded dragon-like creature. Blood stains {char_2_poss} pale wings as {char_1_subj} reaches out, sharing a tense but gentle moment with the frightened animal. {char_1_poss_cap} expression softens into a reassuring smile as {char_1_subj} gains {char_2_poss} trust.",
+    "caption": "Beneath a blazing sky, a young woman stands on a sunlit rooftop, cautiously approaching a dragon-like creature, a small, wounded dragon-like creature. Blood stains its pale wings as she reaches out, sharing a tense but gentle moment with the frightened animal. Her expression softens into a reassuring smile as she gains its trust.",
+    "render_mode": "auto",
+    "locked": false,
+    "needs_review": false
+  },
+  {
+    "scene_id": "scene_2",
+    "start": 26.0,
+    "end": 39.0,
+    "frame_indices": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "character_ids": [
+      "char_1",
+      "char_2"
+    ],
+    "caption_template": "In a dark, makeshift shelter dappled with shafts of light, {char_1_first} sits closely with {char_2_first}, cradling and comforting {char_2_obj}. Surrounded by aged stone and warm, flickering light, {char_1_subj} gently tends to {char_2_poss} wounds and they share a moment of quiet companionship.",
+    "caption": "In a dark, makeshift shelter dappled with shafts of light, a young woman sits closely with a dragon-like creature, cradling and comforting it. Surrounded by aged stone and warm, flickering light, she gently tends to its wounds and they share a moment of quiet companionship.",
+    "render_mode": "auto",
+    "locked": false,
+    "needs_review": false
+  },
+  {
+    "scene_id": "scene_3",
+    "start": 40.0,
+    "end": 44.0,
+    "frame_indices": [
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "character_ids": [
+      "char_1"
+    ],
+    "caption_template": "{char_1_first} sets down a stone bowl of water, then carefully prepares cloth on the ground, {char_1_poss} movements illuminated by the dim blue light of the shelter.",
+    "caption": "a young woman sets down a stone bowl of water, then carefully prepares cloth on the ground, her movements illuminated by the dim blue light of the shelter.",
+    "render_mode": "auto",
+    "locked": false,
+    "needs_review": false
+  },
+  {
+    "scene_id": "scene_4",
+    "start": 45.0,
+    "end": 59.0,
+    "frame_indices": [
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "character_ids": [
+      "char_1",
+      "char_2"
+    ],
+    "caption_template": "As night falls, the shelter grows darker. {char_1_first} and {char_2_first} lie side by side atop a modest bed, wrapped in soft, patched blankets, their forms illuminated by shifting patterns of moonlight through the tattered roof.",
+    "caption": "As night falls, the shelter grows darker. a young woman and a dragon-like creature lie side by side atop a modest bed, wrapped in soft, patched blankets, their forms illuminated by shifting patterns of moonlight through the tattered roof.",
+    "render_mode": "auto",
+    "locked": false,
+    "needs_review": false
+  },
+  {
+    "scene_id": "scene_5",
+    "start": 60.0,
+    "end": 68.0,
+    "frame_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "character_ids": [
+      "char_1",
+      "char_2"
+    ],
+    "caption_template": "Filtered beams of morning light fall over {char_1_first} and {char_2_first} as they awaken in a small, dim shelter, lying close together on a patchwork of blankets. {char_1_subj_cap} stirs gently, while {char_2_subj} nestles against {char_1_obj}, both basking in the soft glow.",
+    "caption": "Filtered beams of morning light fall over a young woman and a dragon-like creature as they awaken in a small, dim shelter, lying close together on a patchwork of blankets. She stirs gently, while it nestles against her, both basking in the soft glow.",
+    "render_mode": "auto",
+    "locked": false,
+    "needs_review": false
+  },
+  {
+    "scene_id": "scene_6",
+    "start": 69.0,
+    "end": 83.0,
+    "frame_indices": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "character_ids": [
+      "char_1",
+      "char_2"
+    ],
+    "caption_template": "Suddenly, a chicken darts across a sunlit urban alley, chased by {char_2_first}. {char_1_first} pursues them through the bustling morning marketplace, maneuvering past vendors, startled townsfolk, and carts woven with shafts of golden light.",
+    "caption": "Suddenly, a chicken darts across a sunlit urban alley, chased by a dragon-like creature. a young woman pursues them through the bustling morning marketplace, maneuvering past vendors, startled townsfolk, and carts woven with shafts of golden light.",
+    "render_mode": "auto",
+    "locked": false,
+    "needs_review": false
+  },
+  {
+    "scene_id": "scene_7",
+    "start": 84.0,
+    "end": 92.0,
+    "frame_indices": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "character_ids": [
+      "char_1"
+    ],
+    "caption_template": "Catching {char_1_poss} breath amid the crowds, {char_1_first} stands among scattered fruit crates, momentarily alone in a pool of sunlight. {char_1_poss_cap} face shifts from concern to surprise as {char_1_subj} looks down, noticing something at {char_1_poss} feet.",
+    "caption": "Catching her breath amid the crowds, a young woman stands among scattered fruit crates, momentarily alone in a pool of sunlight. Her face shifts from concern to surprise as she looks down, noticing something at her feet.",
+    "render_mode": "auto",
+    "locked": false,
+    "needs_review": false
+  },
+  {
+    "scene_id": "scene_8",
+    "start": 93.0,
+    "end": 104.0,
+    "frame_indices": [
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "character_ids": [
+      "char_1",
+      "char_2"
+    ],
+    "caption_template": "Looking up, {char_1_first} spots {char_2_first} perched on exposed market beams above, wings spread wide against the morning sky. {char_2_subj_cap} breathes a puff of smoke, then gazes up at a flock of birds flying in formation, both figures bathed in crisp sunlight. {char_1_subj_cap} smiles as {char_1_subj} watches {char_2_obj} hesitate, poised between sky and city.",
+    "caption": "Looking up, a young woman spots a dragon-like creature perched on exposed market beams above, wings spread wide against the morning sky. It breathes a puff of smoke, then gazes up at a flock of birds flying in formation, both figures bathed in crisp sunlight. She smiles as she watches it hesitate, poised between sky and city.",
+    "render_mode": "auto",
+    "locked": false,
+    "needs_review": false
+  },
+  {
+    "scene_id": "scene_9",
+    "start": 105.0,
+    "end": 119.0,
+    "frame_indices": [
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "character_ids": [
+      "char_1",
+      "char_2"
+    ],
+    "caption_template": "{char_1_first} races up steep, sunlit rooftops as {char_2_first} soars overhead, bathed in warm golden light. Ancient stone structures and vibrant city sprawl stretch beneath them, with the sun setting in radiant hues across the sky. The cinematic scene lingers as both figures pause at the summit, silhouetted against the glowing cityscape.",
+    "caption": "a young woman races up steep, sunlit rooftops as a dragon-like creature soars overhead, bathed in warm golden light. Ancient stone structures and vibrant city sprawl stretch beneath them, with the sun setting in radiant hues across the sky. The cinematic scene lingers as both figures pause at the summit, silhouetted against the glowing cityscape.",
+    "render_mode": "auto",
+    "locked": false,
+    "needs_review": false
+  }
+]

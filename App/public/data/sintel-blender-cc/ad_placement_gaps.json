@@ -1,0 +1,34 @@
+[
+  {
+    "start": 0.0,
+    "end": 26.22,
+    "duration_seconds": 26.22,
+    "midpoint": 13.11,
+    "recommended_ad_start": 0.25,
+    "recommended": true
+  },
+  {
+    "start": 32.12,
+    "end": 47.43,
+    "duration_seconds": 15.31,
+    "midpoint": 39.775,
+    "recommended_ad_start": 32.37,
+    "recommended": true
+  },
+  {
+    "start": 49.06,
+    "end": 70.32,
+    "duration_seconds": 21.26,
+    "midpoint": 59.69,
+    "recommended_ad_start": 49.31,
+    "recommended": true
+  },
+  {
+    "start": 74.88,
+    "end": 108.02,
+    "duration_seconds": 33.14,
+    "midpoint": 91.45,
+    "recommended_ad_start": 75.13,
+    "recommended": true
+  }
+]

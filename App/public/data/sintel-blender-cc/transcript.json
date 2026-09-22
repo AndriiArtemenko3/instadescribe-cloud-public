@@ -1,0 +1,121 @@
+[
+  {
+    "text": "Oh",
+    "start": 26.22,
+    "end": 26.78,
+    "words": [
+      {
+        "word": " Oh",
+        "start": 26.22,
+        "end": 26.78
+      }
+    ]
+  },
+  {
+    "text": "Hey, it's almost done",
+    "start": 26.78,
+    "end": 28.86,
+    "words": [
+      {
+        "word": " Hey,",
+        "start": 26.78,
+        "end": 26.92
+      },
+      {
+        "word": " it's",
+        "start": 27.0,
+        "end": 28.3
+      },
+      {
+        "word": " almost",
+        "start": 28.3,
+        "end": 28.48
+      },
+      {
+        "word": " done",
+        "start": 28.48,
+        "end": 28.86
+      }
+    ]
+  },
+  {
+    "text": "Hey sit still",
+    "start": 30.0,
+    "end": 32.12,
+    "words": [
+      {
+        "word": " Hey",
+        "start": 30.0,
+        "end": 30.84
+      },
+      {
+        "word": " sit",
+        "start": 30.84,
+        "end": 31.36
+      },
+      {
+        "word": " still",
+        "start": 31.36,
+        "end": 32.12
+      }
+    ]
+  },
+  {
+    "text": "Good night's kiss",
+    "start": 47.56,
+    "end": 49.06,
+    "words": [
+      {
+        "word": " Good",
+        "start": 47.43,
+        "end": 48.12
+      },
+      {
+        "word": " night's",
+        "start": 48.12,
+        "end": 48.66
+      },
+      {
+        "word": " kiss",
+        "start": 48.66,
+        "end": 49.06
+      }
+    ]
+  },
+  {
+    "text": "Oh",
+    "start": 70.32,
+    "end": 71.72,
+    "words": [
+      {
+        "word": " Oh",
+        "start": 70.32,
+        "end": 71.72
+      }
+    ]
+  },
+  {
+    "text": "Skills",
+    "start": 73.48,
+    "end": 74.88,
+    "words": [
+      {
+        "word": " Skills",
+        "start": 73.48,
+        "end": 74.88
+      }
+    ]
+  },
+  {
+    "text": "Oh",
+    "start": 108.02,
+    "end": 109.42,
+    "words": [
+      {
+        "word": " Oh",
+        "start": 108.02,
+        "end": 109.42
+      }
+    ]
+  }
+]
