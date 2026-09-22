@@ -20,9 +20,8 @@ for _candidate in (REPO_ROOT / "services" / "api", REPO_ROOT):
         sys.path.insert(0, str(_candidate))
         break
 
-from app.db.base import Base  # noqa: E402
-
 from app import models  # noqa: E402,F401  (imports register the tables)
+from app.db.base import Base  # noqa: E402
 
 config = context.config
 if config.config_file_name is not None:

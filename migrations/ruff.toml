@@ -1,0 +1,5 @@
+extend = "../pyproject.toml"
+
+[lint.isort]
+# Alembic imports the API package; do not infer it from App/app filesystem casing.
+known-first-party = ["app"]
